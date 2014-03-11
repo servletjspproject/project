@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>The Fooseshoes Website Template | Register :: w3layouts</title>
+<title>The Fooseshoes Website Template | Products :: w3layouts</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <link href='http://fonts.googleapis.com/css?family=Maven+Pro:400,900,700,500' rel='stylesheet' type='text/css'>
@@ -65,8 +65,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <div class="header_btm">
 		<div class="menu">
 			<ul>
-				<li class="active"><a href="index.html">Home</a></li>
-				<li><a href="products.html">products</a></li>
+				<li><a href="index.html">Home</a></li>
+				<li class="active"><a href="products.html">products</a></li>
 				<li><a href="about.html">about</a></li>
 				<li><a href="index.html">pages</a></li>
 				<li><a href="blog.html">blog</a></li>
@@ -93,7 +93,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<div class="header_right">
 		<ul>
 			<li><a href="#"><i  class="art"></i><span class="color1">30</span></a></li>
-						<li><a href="my_products.html"><i  class="cart"></i><span>0</span></a></li>
+			<li><a href="my_products.html"><i  class="cart"></i><span>0</span></a></li>
 		</ul>
 	</div>
 	<div class="clear"></div>
@@ -103,7 +103,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <div class="top_bg">
 <div class="wrap">
 <div class="main_top">
-	<h4 class="style">login or create an account</h4>
+	<h2 class="style">my products</h2>
 </div>
 </div>
 </div>
@@ -111,178 +111,66 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <div class="main_bg">
 <div class="wrap">
 <div class="main">
-	<div class="login_left">
-		<h3>login customers</h3>
-		<p>if you have any account with us, please log in.</p>
-	<!-- start registration -->
-	<div class="registration">
-		<!-- [if IE] 
-		    < link rel='stylesheet' type='text/css' href='ie.css'/>  
-		 [endif] -->  
-		  
-		<!-- [if lt IE 7]>  
-		    < link rel='stylesheet' type='text/css' href='ie6.css'/>  
-		<! [endif] -->  
-		<script>
-			(function() {
+	<div class="top_main">
+		<h2>my products</h2>
+	<!--	<a href="#">show all</a> -->
 		
-			// Create input element for testing
-			var inputs = document.createElement('input');
-			
-			// Create the supports object
-			var supports = {};
-			
-			supports.autofocus   = 'autofocus' in inputs;
-			supports.required    = 'required' in inputs;
-			supports.placeholder = 'placeholder' in inputs;
-		
-			// Fallback for autofocus attribute
-			if(!supports.autofocus) {
-				
-			}
-			
-			// Fallback for required attribute
-			if(!supports.required) {
-				
-			}
-		
-			// Fallback for placeholder attribute
-			if(!supports.placeholder) {
-				
-			}
-			
-			// Change text inside send button on submit
-			var send = document.getElementById('register-submit');
-			if(send) {
-				send.onclick = function () {
-					this.innerHTML = '...Sending';
-				}
-			}
-		
-		})();
-		</script>
-	<div class="registration_left">
-		<a href="#"><div class="reg_fb"><img src="images/facebook.png" alt=""><i>sign in using Facebook</i><div class="clear"></div></div></a>
-		 <div class="registration_form">
-		 <!-- Form -->
-			<form id="registration_form" action="LogInServlet" method="post">
-				<div>
-					<label>
-                                            <input name="logInMail" placeholder="email:" type="email" tabindex="3" required="">
-					</label>
-				</div>
-				<div>
-					<label>
-                                            <input name="logPass" placeholder="password" type="password" tabindex="4" required="">
-					</label>
-				</div>						
-				<div>
-					<input type="submit" value="sign in" id="register-submit">
-				</div>
-				<div class="forget">
-					<a href="#">forgot your password</a>
-				</div>
-			</form>
-			<!-- /Form -->
-		</div>
-	</div>
-	</div>
-	<!-- end registration -->
-	</div>
-	<div class="login_left">
-		<h3>register new customers</h3>
-		<p>By creating an account with our store, you will be able to move through the checkout process faster, store multiple shipping address, view and track your orders in your accoung and more.</p>
-		<div class="registration_left">
-		<a href="#"><div class="reg_fb"><img src="images/facebook.png" alt=""><i>register using Facebook</i><div class="clear"></div></div></a>
-		 <div class="registration_form">
-		 <!-- Form 
-		 Sign up for the first time and enter his profile data (name, birthday, password, job, e-mail, credit balance, address, interests, …  )
-		 -->		 
-			<form id="registration_form" action="RegisterationServlet" method="post">
-				<div>
-					<label>
-                            <input name="fname" placeholder="first name:" type="text" tabindex="1" required="" autofocus="">
-					</label>
-				</div>
-				<div>
-					<label>
-                            <input name="lname" placeholder="last name:" type="text" tabindex="2" required="" autofocus="">
-					</label>
-				</div>
-				<div class="sky_form">
-						<ul>
-                            <li><label class="radio left"><input type="radio" name="radio" value="Male" checked=""><i>Male</i></label></li>
-							<li><label class="radio"><input type="radio" value="Female" name="radio"><i>Female</i></label></li>
-						</ul>
-				</div>
-				
-				<div>
-				<label>
-				  Birthday: <input type="date" name="birthday">
-				</label>
-				</div>
 
-				<div>
-					<label>
-                            <input name="mail" placeholder="email address:" type="email" tabindex="3" required="">
-					</label>
-				</div>
-				
-				<div>
-					<label>
-                        <input name="job" placeholder="your job:" type="text" tabindex="1" required="" autofocus="">
-					</label>
-				</div>
-				
-				<div>
-					<label>
-                    <input name="creditBalance" placeholder="your credit balance:" type="text" tabindex="1" required="" autofocus="">
-					</label>
-				</div>
-				
-				<div>
-					<label>
-                        <input name="address" placeholder="your address:" type="text" tabindex="1" required="" autofocus="">
-					</label>
-				</div>
-									
-				<div>
-					<label>
-						<input name="pass1" placeholder="password" type="password" tabindex="4" required="">
-					</label>
-				</div>						
-				<div>
-					<label>
-						<input name="pass1" placeholder="retype password" type="password" tabindex="4" required="">
-					</label>
-				</div>
-				<div>
-					<label>
-                        <input type="checkbox" name="interests" value="Nokia">Nokia<br>
-						<input type="checkbox" name="interests" value="Samsung">Samsung<br>
-						<input type="checkbox" name="interests" value="SonyEricsson">Sony Ericsson<br>
-						<input type="checkbox" name="interests" value="Alcatel">Alcatel<br>
-					</label>
-				</div>
-				
-
-				
-				
-				<div>
-					<input type="submit" value="create an account" id="register-submit">
-				</div>
-				<div class="sky_form">
-					<label class="checkbox"><input type="checkbox" name="checkbox"><i>i agree to <a class="terms" href="#"> terms of service</a> </i></label>
-				</div>
-			</form>
-			<!-- /Form -->
-		</div>
+	<div class="clear"></div>
 	</div>
+	<!-- start grids_of_3 -->
+	<div class="grids_of_3">
+		<div class="grid1_of_3">
+			<a href="details.html">
+				<img src="images/pic1.jpg" alt="">
+				<h3>even &amp; odd</h3>
+				<span class="price">$145,99</span>
+			</a>
+		</div>
+		<div class="read_more">
+			<a class="btn" href="">Remove</a>
+		</div>
+		
+		<div class="clear"></div>
+	</div>
+	
+	<div class="clear"></div>
+	<!-- start grids_of_3 -->
+	<div class="grids_of_3">
+		<div class="grid1_of_3">
+			<a href="details.html">
+				<img src="images/pic1.jpg" alt="">
+				<h3>even &amp; odd</h3>
+				<span class="price">$145,99</span>
+			</a>
+		</div>
+			<div class="read_more">
+				<a class="btn" href="">Remove</a>
+			</div>
+		<div class="clear"></div>
+	</div>
+
+	<div class="clear"></div>
+	<!-- start grids_of_3 -->
+	<div class="grids_of_3">
+		<div class="grid1_of_3">
+			<a href="details.html">
+				<img src="images/pic4.jpg" alt="">
+				<h3>buffalo decollete</h3>
+				<span class="price">$145,99</span>
+			</a>
+		</div>
+		<div class="read_more">
+			<a class="btn" href="">Remove</a>
+		</div>
+		<div class="clear"></div>
+		
+		<div class="read_more">
+			<a class="btn" href="">Buy</a>
+		</div>
 	</div>
 	<div class="clear"></div>
-</div>
-</div>
-</div>
+	
 <!-- start footer -->
 <div class="footer_top">
 <div class="wrap">

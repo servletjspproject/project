@@ -989,8 +989,9 @@ p.submitted span a:hover{
 	margin: 0 20px 0 0;
 }
 .wrapper {
-	position: relative;
-	width: 100%;
+position: relative;
+width: 80%;
+margin-left: 20%;
 }
 .comment-author .author {
 	display: block;

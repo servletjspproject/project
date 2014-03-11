@@ -120,7 +120,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<!---start-image-slider---->
 				<div class="image-slider">
 				
+    		<div id="categoryID" align="center" style="border:1px solid red; background-image:url('images/1.png'); width:265px; hight:300px">
+				<p>Your Score Is: </p>
+				<label id="myScorLableId"></label>
+				</br>
 
+				<input type="button">
+				<input type="button" value="ok">
+				
+			</div>
 				
 				<div class="wrapper">
                 <div id="ei-slider" class="ei-slider">

@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>The Fooseshoes Website Template | Register :: w3layouts</title>
+<title>The Fooseshoes Website Template | Contact :: w3layouts</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <link href='http://fonts.googleapis.com/css?family=Maven+Pro:400,900,700,500' rel='stylesheet' type='text/css'>
@@ -65,13 +65,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <div class="header_btm">
 		<div class="menu">
 			<ul>
-				<li class="active"><a href="index.html">Home</a></li>
+				<li><a href="index.html">Home</a></li>
 				<li><a href="products.html">products</a></li>
 				<li><a href="about.html">about</a></li>
 				<li><a href="index.html">pages</a></li>
 				<li><a href="blog.html">blog</a></li>
-				<li><a href="contact.html">Contact</a></li>
-				<li><a href="profile2.html">profile</a></li>
+				<li  class="active"><a href="contact.html">Contact</a></li>
+				<li><a href="profile.html">profile</a></li>
 				<div class="clear"></div>
 			</ul>
 		</div>
@@ -86,14 +86,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<li><a href="index.html">pages</a></li>
 				<li><a href="blog.html">blog</a></li>
 				<li><a href="contact.html">Contact</a></li>
-				<li><a href="profile2.html">profile</a></li>
+				<li><a href="profile.html">profile</a></li>
 				<div class="clear"></div>
 			</ul>
 		</nav>
 	<div class="header_right">
 		<ul>
 			<li><a href="#"><i  class="art"></i><span class="color1">30</span></a></li>
-						<li><a href="my_products.html"><i  class="cart"></i><span>0</span></a></li>
+			<li><a href="#"><i  class="cart"></i><span>0</span></a></li>
 		</ul>
 	</div>
 	<div class="clear"></div>
@@ -103,7 +103,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <div class="top_bg">
 <div class="wrap">
 <div class="main_top">
-	<h4 class="style">login or create an account</h4>
+	<h2 class="style">Profile</h2>
 </div>
 </div>
 </div>
@@ -111,151 +111,58 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <div class="main_bg">
 <div class="wrap">
 <div class="main">
-	<div class="login_left">
-		<h3>login customers</h3>
-		<p>if you have any account with us, please log in.</p>
-	<!-- start registration -->
-	<div class="registration">
-		<!-- [if IE] 
-		    < link rel='stylesheet' type='text/css' href='ie.css'/>  
-		 [endif] -->  
-		  
-		<!-- [if lt IE 7]>  
-		    < link rel='stylesheet' type='text/css' href='ie6.css'/>  
-		<! [endif] -->  
-		<script>
-			(function() {
-		
-			// Create input element for testing
-			var inputs = document.createElement('input');
-			
-			// Create the supports object
-			var supports = {};
-			
-			supports.autofocus   = 'autofocus' in inputs;
-			supports.required    = 'required' in inputs;
-			supports.placeholder = 'placeholder' in inputs;
-		
-			// Fallback for autofocus attribute
-			if(!supports.autofocus) {
-				
-			}
-			
-			// Fallback for required attribute
-			if(!supports.required) {
-				
-			}
-		
-			// Fallback for placeholder attribute
-			if(!supports.placeholder) {
-				
-			}
-			
-			// Change text inside send button on submit
-			var send = document.getElementById('register-submit');
-			if(send) {
-				send.onclick = function () {
-					this.innerHTML = '...Sending';
-				}
-			}
-		
-		})();
-		</script>
-	<div class="registration_left">
-		<a href="#"><div class="reg_fb"><img src="images/facebook.png" alt=""><i>sign in using Facebook</i><div class="clear"></div></div></a>
-		 <div class="registration_form">
-		 <!-- Form -->
-			<form id="registration_form" action="LogInServlet" method="post">
-				<div>
-					<label>
-                                            <input name="logInMail" placeholder="email:" type="email" tabindex="3" required="">
-					</label>
-				</div>
-				<div>
-					<label>
-                                            <input name="logPass" placeholder="password" type="password" tabindex="4" required="">
-					</label>
-				</div>						
-				<div>
-					<input type="submit" value="sign in" id="register-submit">
-				</div>
-				<div class="forget">
-					<a href="#">forgot your password</a>
-				</div>
-			</form>
-			<!-- /Form -->
-		</div>
-	</div>
-	</div>
-	<!-- end registration -->
-	</div>
-	<div class="login_left">
-		<h3>register new customers</h3>
-		<p>By creating an account with our store, you will be able to move through the checkout process faster, store multiple shipping address, view and track your orders in your accoung and more.</p>
-		<div class="registration_left">
-		<a href="#"><div class="reg_fb"><img src="images/facebook.png" alt=""><i>register using Facebook</i><div class="clear"></div></div></a>
-		 <div class="registration_form">
-		 <!-- Form 
-		 Sign up for the first time and enter his profile data (name, birthday, password, job, e-mail, credit balance, address, interests, …  )
-		 -->		 
-			<form id="registration_form" action="RegisterationServlet" method="post">
-				<div>
-					<label>
-                            <input name="fname" placeholder="first name:" type="text" tabindex="1" required="" autofocus="">
-					</label>
-				</div>
-				<div>
-					<label>
-                            <input name="lname" placeholder="last name:" type="text" tabindex="2" required="" autofocus="">
-					</label>
-				</div>
-				<div class="sky_form">
-						<ul>
-                            <li><label class="radio left"><input type="radio" name="radio" value="Male" checked=""><i>Male</i></label></li>
-							<li><label class="radio"><input type="radio" value="Female" name="radio"><i>Female</i></label></li>
-						</ul>
-				</div>
-				
-				<div>
-				<label>
-				  Birthday: <input type="date" name="birthday">
-				</label>
-				</div>
-
-				<div>
-					<label>
-                            <input name="mail" placeholder="email address:" type="email" tabindex="3" required="">
-					</label>
-				</div>
-				
-				<div>
-					<label>
-                        <input name="job" placeholder="your job:" type="text" tabindex="1" required="" autofocus="">
-					</label>
-				</div>
-				
-				<div>
-					<label>
-                    <input name="creditBalance" placeholder="your credit balance:" type="text" tabindex="1" required="" autofocus="">
-					</label>
-				</div>
-				
-				<div>
-					<label>
-                        <input name="address" placeholder="your address:" type="text" tabindex="1" required="" autofocus="">
-					</label>
-				</div>
-									
-				<div>
-					<label>
-						<input name="pass1" placeholder="password" type="password" tabindex="4" required="">
-					</label>
-				</div>						
-				<div>
-					<label>
-						<input name="pass1" placeholder="retype password" type="password" tabindex="4" required="">
-					</label>
-				</div>
+	<div class="contact">				
+				<div class="contact_left">
+					<div class="contact_info">
+			    	 		<div class="map">
+					   		<!--	<iframe width="100%" height="175" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Lighthouse+Point,+FL,+United+States&amp;aq=4&amp;oq=light&amp;sll=26.275636,-80.087265&amp;sspn=0.04941,0.104628&amp;ie=UTF8&amp;hq=&amp;hnear=Lighthouse+Point,+Broward,+Florida,+United+States&amp;t=m&amp;z=14&amp;ll=26.275636,-80.087265&amp;output=embed"></iframe><br><small><a href="https://maps.google.co.in/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Lighthouse+Point,+FL,+United+States&amp;aq=4&amp;oq=light&amp;sll=26.275636,-80.087265&amp;sspn=0.04941,0.104628&amp;ie=UTF8&amp;hq=&amp;hnear=Lighthouse+Point,+Broward,+Florida,+United+States&amp;t=m&amp;z=14&amp;ll=26.275636,-80.087265" style="color:#242424;text-shadow:0 1px 0 #ffffff; text-align:left;font-size:12px;padding: 5px;">View Larger Map</a></small>
+					   		-->
+							<img src="images/profile.png" alt=""></br>
+							</div>
+      				</div>
+      			<div class="company_address">
+				   </div>
+				</div>				
+				<div class="contact_right">
+				  <div class="contact-form">
+				  	<h3>Profile Information</h3>
+					    <form method="post" action="contact-post.html">
+					    	<div>
+						    	<span><label>FNAME</label></span>
+						    	<span><input name="userNameProfile" type="text" class="textbox"></span>
+						    </div>
+							<div>
+						    	<span><label>LNAME</label></span>
+						    	<span><input name="userNameProfile" type="text" class="textbox"></span>
+						    </div>
+						    <div>
+						    	<span><label>E-MAIL</label></span>
+						    	<span><input name="userEmailProfile" type="text" class="textbox"></span>
+						    </div>
+						    <div>
+						     	<span><label>MOBILE</label></span>
+						    	<span><input name="userPhoneProfile" type="text" class="textbox"></span>
+						    </div>
+						    <div>
+						     	<span><label>Address</label></span>
+						    	<span><input name="addressProfile" type="text" class="textbox"></span>
+						    </div>
+							<div>
+						    	<span><label>JOB</label></span>
+						    	<span><input name="jobProfile" type="text" class="textbox"></span>
+						    </div>
+							<div>
+						    	<span><label>CreditBalance</label></span>
+						    	<span><input name="CreditBalanceProfile" type="text" class="textbox"></span>
+						    </div>
+							<div>
+						    	<span><label>Address</label></span>
+						    	<span><input name="addressProfile" type="text" class="textbox"></span>
+						    </div>	
+							<div>
+						    	<span><label>password</label></span>
+						    	<span><input name="passwordProfile" type="text" class="textbox"></span>
+						    </div>							
 				<div>
 					<label>
                         <input type="checkbox" name="interests" value="Nokia">Nokia<br>
@@ -263,23 +170,19 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<input type="checkbox" name="interests" value="SonyEricsson">Sony Ericsson<br>
 						<input type="checkbox" name="interests" value="Alcatel">Alcatel<br>
 					</label>
-				</div>
-				
 
-				
-				
-				<div>
-					<input type="submit" value="create an account" id="register-submit">
-				</div>
-				<div class="sky_form">
-					<label class="checkbox"><input type="checkbox" name="checkbox"><i>i agree to <a class="terms" href="#"> terms of service</a> </i></label>
-				</div>
-			</form>
-			<!-- /Form -->
-		</div>
-	</div>
-	</div>
-	<div class="clear"></div>
+					</div>
+							
+							
+							
+						   <div>
+						   		<span><input type="submit" value="Save Changes"></span>
+						  </div>
+					    </form>
+				    </div>
+  				</div>		
+  				<div class="clear"></div>		
+		  </div>
 </div>
 </div>
 </div>
