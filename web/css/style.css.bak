@@ -1399,6 +1399,7 @@ ul.news li .desc h4 a:hover{
 .contact-form input[type="text"],.contact-form textarea{
 	font-family: 'Maven Pro', sans-serif;
 	padding: 10px;
+	display: block;
 	width: 70%;
 	background: #ffffff;
 	outline: none;
