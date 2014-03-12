@@ -77,6 +77,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<li><a href="index.html">pages</a></li>
 				<li><a href="blog.html">blog</a></li>
 				<li><a href="contact.html">Contact</a></li>
+				<li><a href="profile.html">profile</a></li>
 				<div class="clear"></div>
 			</ul>
 		</div>
@@ -97,8 +98,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		</nav>
 	<div class="header_right">
 		<ul>
-			<li><a href="#"><i  class="art"></i><span class="color1">30</span></a></li>
-						<li><a href="my_products.html"><i  class="cart"></i><span>0</span></a></li>
+			<li><a href="my_products.html"><i  class="cart"></i><span>0</span></a></li>
 		</ul>
 	</div>
 	<div class="clear"></div>
@@ -199,10 +199,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<div class="available">
 						<div class="btn_form">
 							<form>
-								<input type="submit" value="buy now" title="" />
+								<input type="submit" value="buy now" title="" onclick="buy();" />
+											
+		<div id="buyDiv" style="left:537pt; top:6px; black outset; width:160px; text-align:center; color:gray; font-size:25px; font-family:'Swis721 BlkCn BT';">
+		</div> 
+		<script>
+		
+		
+		</script>
 							</form>
 						</div>
-						<span><a href="#">login to save in wishlist </a></span>
+
 						<p>It is a long established fact that a reader will be distracted by the readable contentContrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from of a page when looking at its layout.</p>
 					</div>
 					<div class="share-desc">
